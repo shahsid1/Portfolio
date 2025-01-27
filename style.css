@@ -32,18 +32,27 @@ p{
 
 .skillsdiv{
     margin-left: 8%;
-    display: flex;
-    height: fit-content;
-    margin-top: 5%;
+    
 }
 .skills{    
     height: fit-content;
     padding: 1%;
-    font-size: 150%;
-    border: 5px solid grey;
-    border-radius: 0% 20px 20px 20px;
-    border-radius: 20%;
+    border: 1px solid rgb(4, 4, 4);
+    border-radius: 20px 20px 20px 20px; 
     
+}
+.frontend{
+    display: flex;
+    margin-left: 100%;
+ 
+}
+.backend{
+    display: flex;
+    margin-left: 120%;
+}
+.framework{
+    display: flex;
+    margin-left: 100%;
 }
 #profilediv{  
    width: 40%;
@@ -65,8 +74,8 @@ p{
 .verticalline{
     border-left: 6px solid black;
     height: 310px;
-    
     margin-top: -0.2%;
+    margin-left: 55.1%;
 }
 .circle2{
     border: 5px solid black;
