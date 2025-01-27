@@ -39,15 +39,14 @@ p{
 .skills{    
     height: fit-content;
     padding: 1%;
-    font-size: 250%;
-    background-color: black;
+    font-size: 150%;
+    border: 5px solid grey;
+    border-radius: 0% 20px 20px 20px;
     border-radius: 20%;
-    color: White;
+    
 }
 #profilediv{  
    width: 40%;
-   
-   
 }
 #profile{
     margin-top: 20%;
@@ -56,10 +55,33 @@ p{
     border-radius: 100%;
     border : 10px solid black;
 }
+#circledesign{
+    display: flex;
+}
+#vertcallinegroup{
+    display: flex;
+}
+
 .verticalline{
     border-left: 6px solid black;
-    height: 250px;
-    margin-left: 82%;
+    height: 310px;
+    
+    margin-top: -0.2%;
+}
+.circle2{
+    border: 5px solid black;
+    border-radius: 100%;
+    height: 10px;
+    width: 10px;
+    margin-left: 10%;
+    
+}
+.circle1{
+    border: 5px solid black;
+    border-radius: 100%;
+    height: 10px;
+    width: 10px;
+    margin-left: 10%;
 }
 .circle{
     border: 5px solid black;
@@ -73,6 +95,47 @@ p{
 .horizontalline{
     margin-top: 0.5%;
     border-top: 6px solid black;
-    width: 80.4%;
-
+    width: 22.65%;
+}
+#external{
+    display: flex;
+    font-size: 170%;
+    
+}
+#about{
+    border: 5px solid grey;
+    border-radius: 0% 20px 20px 20px;
+    padding: 20px;
+    text-align: center;
+    margin-left: 8%;
+    width: 6%;
+}
+#project{
+    border: 5px solid grey;
+    border-radius: 0% 20px 20px 20px;
+    padding: 20px;
+    text-align: center;
+    margin-left: 15%;
+    width: 6%;
+}
+#resume{
+    border: 5px solid grey;
+    border-radius: 0% 20px 20px 20px;
+    padding: 20px;
+    text-align: center;
+    margin-left: 15%;
+    width: 6%;
+}
+.verticallinedown{
+    border-left: 6px solid black;
+    height: 60px;
+    margin-left: 10.4%;
+}
+#vertcallinegroupdown{
+    display: flex;
+}
+.verticallinedown1{
+    border-left: 6px solid black;
+    height: 60px;
+    margin-left: 23.53%;
 }
