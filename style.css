@@ -1,0 +1,46 @@
+body{
+    margin-left: 15%;
+    margin-right: 15%;
+}
+.name{
+    width: 100%;
+    margin-left: 10%;
+    color: black;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 250%;
+}
+#navbar{
+    display: flex;
+    margin-top: 2%
+}
+#navbarheadings{
+    display: flex;
+    margin-left: 45%;
+}
+.navbarheading{
+    color: black;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 250%;
+}
+.skillsdiv{
+    margin-left: 8%;
+    display: flex;
+    height: fit-content;
+    margin-top: 5%;
+}
+.skills{    
+    height: fit-content;
+    padding: 1%;
+    font-size: 250%;
+    background-color: black;
+    border-radius: 20%;
+    color: White;
+}
+#profilediv{  
+    margin-top: 5%;
+}
+#profile{
+    margin-left: 70%;    
+    width: 30%;
+    border-radius: 100px;
+}
