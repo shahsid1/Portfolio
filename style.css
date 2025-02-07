@@ -106,6 +106,24 @@ p {
     width: 10%;
 }
 
+.pagelinks{
+    position: fixed;
+    margin-top: 2%;
+    box-shadow: 0px 0px 20px;
+    width: fit-content;
+    border-radius: 20px;
+}
+
+.education{
+    display: flex;
+    font-size: 2rem;
+    background-color: rgba(237, 239, 238, 0.986);
+    border-radius: 20px;
+    margin-top: 2%;
+}
+
+
+
 /* Responsive Design */
 @media screen and (max-width: 1024px) {
     body {
