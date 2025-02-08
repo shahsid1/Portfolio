@@ -1,19 +1,22 @@
 /* General styling */
 body {
-    margin-left: 18%;
-    margin-right: 18%;
-    margin-top: 3%;
+    margin-left: 27rem;
+    margin-right: 27rem;
+    margin-top: 3rem;
     font-family: ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
     padding: 0 10%;
+    animation: blurIn 1s ease-out forwards;
 }
 
-.links{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    box-shadow: 0px 0px 20px;
-    width: fit-content;
-    border-radius: 20px;
+@keyframes blurIn {
+  from {
+    filter: blur(10px);
+    opacity: 0;
+  }
+  to {
+    filter: blur(0);
+    opacity: 1;
+  }
 }
 
 #information {
@@ -21,40 +24,50 @@ body {
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
-    
 }
 
 .personalinfo {
-    margin-top: 9%;
     flex: 1 1 60%;
 }
 
 .name {
-    
     color: black;
-    font-size: 3.1rem;
-    
+    font-size: 4rem; 
 }
 
-p {
-    color: black;
-    font-size: 1.5rem;
-    text-align: justify;
-    font-weight: 400;
+.personalinfo p {
+    margin-top: -2rem;
+    color: rgb(101, 100, 100);
+    font-size: 1.7rem;
+    font-weight: 500;
 }
 
 #profilediv {
-    margin-top: 5%;
     flex: 1 1 30%;
     text-align: center;
 }
 
 #profile {
-    width: 70%;
+    width: 16rem;
     border-radius: 50%;
     border: 8px solid black;
+    box-shadow: 0px 0px 2rem black;
+    transition: background-color 0.9s ease, transform 0.9s ease;
 }
 
+#profile:hover{
+    transform: scale(1.1);
+}
+
+.about h1{
+    margin-top: 2rem;
+    font-size: 1.8rem; 
+}
+.about p{
+    font-size: 150%; 
+    color: rgb(101, 100, 100);
+    
+}
 .skillsdiv {
     margin: 0rem 0;
     display: flex;
@@ -80,11 +93,6 @@ p {
     width: 50px;
 }
 
-.verticalline {
-    border-left: 4px solid black;
-    height: 310px;
-}
-
 .design {
     display: flex;
     justify-content: center;
@@ -92,23 +100,10 @@ p {
     margin-top: 3%;
 }
 
-.circle,
-.circle1 {
-    border: 4px solid black;
-    border-radius: 50%;
-    height: 10px;
-    width: 10px;
-    margin: 0 1rem;
-}
-
-.horizontalline {
-    border-top: 4px solid black;
-    width: 10%;
-}
-
 .pagelinks{
+    background-color: white;
     position: fixed;
-    margin-top: 2%;
+    margin-top: 8%;
     box-shadow: 0px 0px 20px;
     width: fit-content;
     border-radius: 20px;
@@ -120,6 +115,11 @@ p {
     background-color: rgba(237, 239, 238, 0.986);
     border-radius: 20px;
     margin-top: 2%;
+}
+
+.educationdetails{
+    margin-left: 2%;
+    
 }
 
 /* Card container */
@@ -164,12 +164,10 @@ p {
     color: #666;
 }
 
-
-
 .contact-container {
     background: #fff;
     padding: 20px;
-    width: 100%;
+    width: 95%;
     border-radius: 10px;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
     text-align: center;
@@ -218,7 +216,6 @@ button {
     color: white;
     font-size: 16px;
     cursor: pointer;
-    transition: background 0.3s;
 }
 
 button:hover {
@@ -250,6 +247,7 @@ button:hover {
     }
 
     .skillsdiv {
+        margin-top: 2%;
         flex-direction: row;
         flex-wrap: wrap;
         justify-content: center;
@@ -270,16 +268,7 @@ button:hover {
         width: 40px;
     }
 
-    .circle,
-    .circle1 {
-        height: 8px;
-        width: 8px;
-    }
-
-    .horizontalline {
-        width: 15%;
-    }
-
+    
 }
 
 @media screen and (max-width: 480px) {
@@ -297,16 +286,6 @@ button:hover {
 
     #profile {
         width: 60%;
-    }
-
-    .circle,
-    .circle1 {
-        height: 6px;
-        width: 6px;
-    }
-
-    .horizontalline {
-        width: 20%;
     }
 
 }
