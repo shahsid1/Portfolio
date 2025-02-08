@@ -54,6 +54,7 @@ body {
     box-shadow: 0px 0px 2rem black;
     transition: background-color 0.9s ease, transform 0.9s ease;
     cursor: pointer;
+
 }
 
 #profilediv img:hover{
@@ -72,6 +73,7 @@ body {
 }
 
 /*-----------Skills--------------*/
+
 .skillssection h1{
     font-size: 1.8rem;
     margin-top: 3rem;
@@ -84,7 +86,7 @@ body {
 }
 
 .skillsdiv div:hover{
-    background-image: linear-gradient(to right, rgb(237, 67, 5) , rgb(56, 56, 56));
+    background-image: linear-gradient(to right, rgb(5, 140, 237) , rgb(56, 56, 56));
     transform: scale(1.1);
     transition: background-color 0.5s ease, transform 0.5s ease;
     cursor: pointer;
@@ -109,16 +111,25 @@ body {
 
 /*-----------Social--------------*/
 .social{
-    display: flex;
+    position: fixed;
+    background-color: white;
+    box-shadow: 0px 0px 20px;
+    border-radius: 20px;
+    width: fit-content;
 }
 
-.social div{
-    background-color: white;
-    position: fixed;
-    box-shadow: 0px 0px 20px;
-    width: fit-content;
-    border-radius: 20px;
+.social img{
+    height: 3rem;
+    width : 2.5rem;
+    padding: 0.5rem;
 }
+
+.social img:hover{
+    transform: scale(1.5);
+    transition: background-color 0.5s ease, transform 0.5s ease;
+}
+
+/*-----------Education--------------*/
 
 .education{
     display: flex;
