@@ -1,4 +1,4 @@
-/* General styling */
+/*-----------General styling--------------*/
 body {
     margin-left: 27rem;
     margin-right: 27rem;
@@ -19,10 +19,10 @@ body {
   }
 }
 
+/*-----------BasicInfo and Profile--------------*/
 #information {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
     align-items: center;
 }
 
@@ -30,7 +30,7 @@ body {
     flex: 1 1 60%;
 }
 
-.name {
+.personalinfo h1 {
     color: black;
     font-size: 4rem; 
 }
@@ -47,63 +47,74 @@ body {
     text-align: center;
 }
 
-#profile {
+#profilediv img {
     width: 16rem;
     border-radius: 50%;
     border: 8px solid black;
     box-shadow: 0px 0px 2rem black;
     transition: background-color 0.9s ease, transform 0.9s ease;
+    cursor: pointer;
 }
 
-#profile:hover{
+#profilediv img:hover{
     transform: scale(1.1);
 }
 
+/*-----------About--------------*/
 .about h1{
-    margin-top: 2rem;
+    margin-top: 3rem;
     font-size: 1.8rem; 
 }
 .about p{
+    text-align: justify;
     font-size: 150%; 
-    color: rgb(101, 100, 100);
-    
+    color: rgb(101, 100, 100); 
 }
+
+/*-----------Skills--------------*/
+.skillssection h1{
+    font-size: 1.8rem;
+    margin-top: 3rem;
+}
+
 .skillsdiv {
-    margin: 0rem 0;
     display: flex;
     flex-direction: row;
-    padding: 0%;
     justify-content: space-around;
 }
 
-.languages{
+.skillsdiv div:hover{
+    background-image: linear-gradient(to right, rgb(237, 67, 5) , rgb(56, 56, 56));
+    transform: scale(1.1);
+    transition: background-color 0.5s ease, transform 0.5s ease;
+    cursor: pointer;
+    color: white;
+}
+
+.skillsdiv div{
     padding: 0.5%;
     text-align: center;
-    border: 1px solid black;
+    border: 0.2rem solid black;
     border-radius: 20px;
     display: flex;
-    
+    background-image: linear-gradient(to right , rgb(242, 232, 228) , rgb(164, 164, 164)) ;
 }
-.lan{
+.skillsdiv span{
     align-content: center;
     font-weight: bold;
-    
 }
-.skills {
-    width: 50px;
+.skillsdiv img  {
+    width: 3rem;
 }
 
-.design {
+/*-----------Social--------------*/
+.social{
     display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 3%;
 }
 
-.pagelinks{
+.social div{
     background-color: white;
     position: fixed;
-    margin-top: 8%;
     box-shadow: 0px 0px 20px;
     width: fit-content;
     border-radius: 20px;
