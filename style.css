@@ -111,6 +111,7 @@ body {
 
 /*-----------Social--------------*/
 .social{
+    margin-left: 20rem;
     position: fixed;
     background-color: white;
     box-shadow: 0px 0px 20px;
@@ -131,18 +132,33 @@ body {
 
 /*-----------Education--------------*/
 
-.education{
+.educationmain h1{
+    font-size: 1.8rem;
+    margin-top: 5%;
+}
+.educationmain div{
+    padding: 0.5rem;
+    flex: content;
+}
+.educationdetails {
     display: flex;
-    font-size: 2rem;
+    margin: 0%;
+    width: 100%;
+    font-size: 1.5rem;
     background-color: rgba(237, 239, 238, 0.986);
-    border-radius: 20px;
-    margin-top: 2%;
+    border-radius: 20px;   
+    color: rgb(101, 100, 100);
 }
 
-.educationdetails{
-    margin-left: 2%;
-    
+.educationdetails div b{
+    color: rgb(4, 4, 4);
 }
+.educationdetails:hover{
+    box-shadow: 5px 10px 20px;
+    transition: background-color 0.9s ease, transform 0.9s ease;
+    cursor: pointer;
+}
+
 
 /* Card container */
 .card-container {
