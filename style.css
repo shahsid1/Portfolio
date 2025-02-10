@@ -1,9 +1,10 @@
 /*-----------General styling--------------*/
-body {
+.body {
     margin: 3rem 27rem;
     font-family: ui-sans-serif, system-ui, sans-serif;
     padding: 0 10%;
     animation: blurIn 1s ease-out forwards;
+    
 }
 
 @keyframes blurIn {
@@ -75,7 +76,7 @@ body {
 
 .social {
     position: fixed;  /* Keeps it in the same place on the screen */
-    bottom: 40%; /* Adjust as needed to position it in the middle */
+    bottom: 1rem; /* Adjust as needed to position it in the middle */
     left: 50%;
     transform: translateX(-50%);
     background-color: rgba(255, 255, 255, 0.9); /* Slight transparency */
