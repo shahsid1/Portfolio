@@ -212,7 +212,7 @@ button:hover { background: #0056b3; }
 
 /* Tablets (768px - 1024px) */
 @media screen and (max-width: 1024px) {
-    body {
+    .body {
         margin: 2rem 5%;
         padding: 0 5%;
     }
@@ -305,7 +305,7 @@ button:hover { background: #0056b3; }
 
 /* Responsive Design for Mobile Screens (320px - 767px) */
 @media screen and (max-width: 767px) {
-    body {
+    .body {
         margin: 1rem;
         padding: 0 5%;
     }
