@@ -21,7 +21,7 @@
 
 .personalinfo { flex: 1 1 60%; }
 .personalinfo h1 { color: black; font-size: 4rem; }
-.personalinfo p { margin-top: -2rem; color: #656464; font-size: 1.7rem; font-weight: 500; }
+.personalinfo p { margin-top: -2rem; color: #656464; font-size: 1.5rem;}
 
 #profilediv {
     flex: 1 1 30%;
@@ -48,11 +48,19 @@
 
 /*-----------Skills--------------*/
 .skillsdiv {
+    width: fit-content;
     display: flex;
-    justify-content: space-around;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.6rem;
+}
+.skillscontainer{
+    margin-left: 10rem;
+    margin-right: 10rem;
 }
 
 .skillsdiv div {
+    gap: 0.5rem;
     padding: 0.5%;
     text-align: center;
     border: 0.2rem solid black;
@@ -183,12 +191,11 @@
 .input-group {
     padding: 1%;
     display: flex;
-    justify-content: space-between;
     margin-bottom: 15px;
 }
 
 .input-group input, textarea {
-    width: 100%;
+    width: 95%;
     padding: 10px;
     border: 1px solid #ccc;
     border-radius: 5px;
@@ -215,6 +222,7 @@ button:hover { background: #0056b3; }
     .body {
         margin: 2rem 5%;
         padding: 0 5%;
+        margin-bottom: 5rem;
     }
 
     /* Profile Section */
@@ -271,7 +279,7 @@ button:hover { background: #0056b3; }
 
     /* Social Icons */
     .social {
-        bottom: 5%;
+        position: fixed;
         left: 50%;
         transform: translateX(-50%);
         padding: 8px;
@@ -306,8 +314,10 @@ button:hover { background: #0056b3; }
 /* Responsive Design for Mobile Screens (320px - 767px) */
 @media screen and (max-width: 767px) {
     .body {
-        margin: 1rem;
+        margin-left: 1rem;
         padding: 0 5%;
+        margin-right: 2rem;
+        margin-bottom: 5rem;
     }
 
     #information {
@@ -337,9 +347,21 @@ button:hover { background: #0056b3; }
         width: 12rem;
     }
 
+    /* Skills Section */
+    .skillscontainer{
+        margin-left: 0.1px;
+        margin-right: 0.1px;
+    }
     .skillsdiv {
-        flex-direction: column;
-        align-items: center;
+        flex-wrap: wrap;
+        gap: 10px;
+        justify-content: center;
+    }
+
+    .skillsdiv div {
+        gap: 0.1rem;
+        padding: 1%;
+        width: 40%;
     }
 
     .educationdetails {
@@ -367,8 +389,8 @@ button:hover { background: #0056b3; }
     }
 
     .social {
-        position: static;
-        margin-top: 1rem;
+        position: fixed;
+        margin-bottom: 0rem;
         display: flex;
         justify-content: center;
     }
