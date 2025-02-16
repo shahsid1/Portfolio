@@ -1,6 +1,6 @@
 /*-----------General styling--------------*/
 .body {
-    margin: 7rem 25rem;
+    margin: 5rem 25rem;
     font-family: ui-sans-serif, system-ui, sans-serif;
     padding: 0 10%;
     animation: blurIn 1s ease-out forwards;
@@ -69,7 +69,7 @@
 
 /*-----------Moto Section--------------*/
 #moto{
-    margin-top: 12%;
+    margin-top: 10%;
 }
 .motoinfo { flex: 1 1 60%; }
 .motoinfo h1 { color: black; font-size: 4rem; }
@@ -120,7 +120,7 @@
 
 .social {
     position: fixed;  /* Keeps it in the same place on the screen */
-    bottom: 1rem; /* Adjust as needed to position it in the middle */
+    margin-top: 5.5%;    
     left: 50%;
     transform: translateX(-50%);
     background-color: rgba(255, 255, 255, 0.9); /* Slight transparency */
@@ -128,8 +128,6 @@
     border-radius: 20px;
     padding: 10px 15px;
     display: flex;
-    align-items: center;
-    justify-content: center;
     gap: 15px;
     width: fit-content;
     z-index: 1000; /* Ensures it stays on top */
