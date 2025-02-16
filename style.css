@@ -1,6 +1,6 @@
 /*-----------General styling--------------*/
 .body {
-    margin: 3rem 27rem;
+    margin: 7rem 25rem;
     font-family: ui-sans-serif, system-ui, sans-serif;
     padding: 0 10%;
     animation: blurIn 1s ease-out forwards;
@@ -39,15 +39,51 @@
 
 #profilediv img:hover { transform: scale(1.1); }
 
-/*-----------About--------------*/
-.about h1, .skillssection h1, .educationmain h1, .project h1, .contact h1 {
-    font-size: 1.8rem;
-    margin-top: 3rem;
+
+/*-----------Link Section--------------*/
+
+.linkdiv {
+    margin-left: 2%;
+    display: flex;
+    gap: 2rem;
 }
-.about p { text-align: justify; font-size: 150%; color: #656464; }
+
+
+.linkdiv div {
+    gap: 0.5rem;
+    padding: 0.5%;
+    text-align: center;
+    background-color: rgb(213, 218, 219);
+    border-radius: 15px;
+    display: flex;
+    transition: transform 0.5s ease, background 0.5s ease;
+    cursor: pointer;
+}
+
+.linkdiv div:hover {
+    transform: scale(1.1);
+}
+
+.linkdiv img { width: 3rem; }
+.linkdiv span { align-content: center; font-weight: bold; }
+
+
+/*-----------Moto Section--------------*/
+#moto{
+    margin-top: 12%;
+}
+.motoinfo { flex: 1 1 60%; }
+.motoinfo h1 { color: black; font-size: 4rem; }
+.motoinfo p { margin-top: -2rem; color: #656464; font-size: 2rem;text-align: center;}
 
 /*-----------Skills--------------*/
+
+.skillssection{margin-top: 6%; text-align: center;}
+.skillssection h1{
+    font-size: 2.5rem;
+}
 .skillsdiv {
+    margin-top: 5%;
     width: fit-content;
     display: flex;
     flex-wrap: wrap;
@@ -72,7 +108,7 @@
 }
 
 .skillsdiv div:hover {
-    background: linear-gradient(to right, #058ced, #383838);
+    background: linear-gradient(to right, #888a6b, #383838);
     transform: scale(1.1);
     color: white;
 }
@@ -110,25 +146,31 @@
     transform: scale(1.2);
 }
 
-
-/*-----------Education--------------*/
-.educationdetails {
-    display: flex;
-    width: 100%;
-    font-size: 1.5rem;
-    background: #edefeefb;
-    border-radius: 20px;
-    color: #656464;
-    padding: 0.5rem;
-    transition: box-shadow 0.9s ease;
-    align-items: center; /* Ensures vertical alignment */
-    justify-content: space-between; /* Pushes content to opposite sides */
-}
-.educationdetails b {
-    color: black; /* Ensures bold text is black */
+.icon-container {
+    position: relative;
+    display: inline-block;
+    text-align: center;
 }
 
-.educationdetails:hover { box-shadow: 5px 10px 20px; cursor: pointer; }
+.tooltip {
+    position: absolute;
+    bottom: 120%; /* Moves text above the icon */
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: black;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 12px;
+    white-space: nowrap;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+    pointer-events: none;
+}
+
+.icon-container:hover .tooltip {
+    opacity: 1;
+}
 
 /*-----------Project--------------*/
 .card-container {

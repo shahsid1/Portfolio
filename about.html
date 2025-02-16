@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About</title>
+    <style>
+        /*---------Body--------*/
+    .body {
+        margin: 7rem 25rem;
+        font-family: ui-sans-serif, system-ui, sans-serif;
+        padding: 0 10%;
+        animation: blurIn 1s ease-out forwards;
+    
+    }
+
+    @keyframes blurIn {
+        from { filter: blur(10px); opacity: 0; }
+        to { filter: blur(0); opacity: 1; }
+    }
+
+        /*-----------About--------------*/
+        .about h1, .skillssection h1, .educationmain h1, .project h1, .contact h1 {
+        font-size: 1.8rem;
+        margin-top: 3rem;
+        }
+        .about p { text-align: justify; font-size: 150%; color: #656464; }
+
+        /*-----------Education--------------*/
+.educationdetails {
+    display: flex;
+    width: 100%;
+    font-size: 1.5rem;
+    background: #edefeefb;
+    border-radius: 20px;
+    color: #656464;
+    padding: 0.5rem;
+    transition: box-shadow 0.9s ease;
+    align-items: center; /* Ensures vertical alignment */
+    justify-content: space-between; /* Pushes content to opposite sides */
+}
+.educationdetails b {
+    color: black; /* Ensures bold text is black */
+}
+
+.educationdetails:hover { box-shadow: 5px 10px 20px; cursor: pointer; }
+
+
+        /*-----------Social--------------*/
+
+.social {
+    position: fixed;  /* Keeps it in the same place on the screen */
+    bottom: 1rem; /* Adjust as needed to position it in the middle */
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgba(255, 255, 255, 0.9); /* Slight transparency */
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
+    border-radius: 20px;
+    padding: 10px 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    width: fit-content;
+    z-index: 1000; /* Ensures it stays on top */
+}
+
+.social img {
+    height: 40px;
+    width: 40px;
+    padding: 5px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.social img:hover {
+    transform: scale(1.2);
+}
+
+.icon-container {
+    position: relative;
+    display: inline-block;
+    text-align: center;
+}
+
+.tooltip {
+    position: absolute;
+    bottom: 120%; /* Moves text above the icon */
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: black;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 12px;
+    white-space: nowrap;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+    pointer-events: none;
+}
+
+.icon-container:hover .tooltip {
+    opacity: 1;
+}
+    </style>
+
+</head>
+<body>
+    <main class="body">
+        <!------------About Section-------------->
+    <section class="about">
+        <h1>About</h1>
+        <p>I am a passionate Full Stack Java Developer with a strong foundation in Java, Spring Boot, Hibernate, and Microservices, complemented 
+            by frontend skills in HTML, CSS, and JavaScript. With a keen interest in DevOps and AWS, I am continuously expanding my expertise in 
+            cloud technologies and modern software development practices. 
+        </p>
+        <p>
+            My approach to development is driven by a problem-solving mindset, clean coding principles, and a user-centric design philosophy. 
+            Whether it's building scalable backend systems, optimizing databases, or creating dynamic web applications, I enjoy crafting seamless 
+            and efficient solutions.
+        </p>
+        <p>
+            I am currently enhancing my skills in Data Structures and Algorithms (DSA) to improve my problem-solving abilities, while also 
+            exploring DevOps tools to streamline deployment processes. I am eager to contribute to innovative projects and collaborate with 
+            like-minded professionals to build impactful software solutions.
+        </p>
+    </section>
+
+ <!------------Education Section-------------->
+ <section class="educationmain">
+    <h1>Education</h1>
+    <div class="educationdetails">
+        <div><b>Sharnbasva University</b> <br> B.Tech / Computer Science And Engineering</div>
+        <p>2024</p>
+    </div><br>
+    <div class="educationdetails">
+        <div><b>Gurukul Independent PU College</b> <br> 12th</div>
+        <p>2020</p>
+    </div><br>
+    <div class="educationdetails">
+        <div><b>S.R.N Mehta School</b> <br> 10th</div>
+        <p>2018</p>
+    </div>
+</section>
+
+</main>
+
+<!------------Social Section-------------->
+
+<div class="social">
+    <div class="icon-container"><a href="index.html"><div class="tooltip">Home</div><span><img src="Images/home.svg" alt="Home"></span></a></div>
+    <div class="icon-container"><a href="about.html"><div class="tooltip">About</div><span><img src="Images/avatar.svg" alt="Home"></span></a></div>
+    <div class="icon-container"><a href="#"><span><img src="Images/moon.svg" alt="Dark Mode"></span></a></div>
+
+</div>
+
+</body>
+</html>
