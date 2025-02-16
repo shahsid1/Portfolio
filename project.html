@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project</title>
+    <style>
+
+.body {
+    margin: 7rem 25rem;
+    font-family: ui-sans-serif, system-ui, sans-serif;
+    padding: 0 10%;
+    animation: blurIn 1s ease-out forwards;
+    
+}
+
+@keyframes blurIn {
+    from { filter: blur(10px); opacity: 0; }
+    to { filter: blur(0); opacity: 1; }
+}
+
+        /*-----------Project--------------*/
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.card {
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    width: 400px;
+    transition: transform 0.9s ease;
+}
+
+.card img { width: 100%; height: 40%; display: block; }
+.card img:hover { transform: scale(1.05); cursor: pointer; }
+
+.card-content { padding: 15px; text-align: center; }
+.card-content h3 { text-align: left; margin-bottom: 10px; font-size: 1.6rem; }
+.card-content p { font-size: 20px; color: #666; text-align: left; }
+
+.skill {
+    font-size: 1.3rem;
+    padding: 0.5rem;
+    background: #ebebeb;
+    border-radius: 10px;
+    width: fit-content;
+}
+
+.card-content div { display: flex; justify-content: space-evenly; }
+
+.website {
+    display: flex;
+    margin: 0 22px 10px;
+    font-size: 1.3rem;
+    padding: 0.5rem;
+    background: #ebebeb;
+    border-radius: 10px;
+    width: fit-content;
+    align-items: center;
+}
+.website img { width: 1.7rem; height: 1.7rem; }
+
+/*-----------Social--------------*/
+
+.social {
+    position: fixed;  /* Keeps it in the same place on the screen */
+    bottom: 1rem; /* Adjust as needed to position it in the middle */
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgba(255, 255, 255, 0.9); /* Slight transparency */
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
+    border-radius: 20px;
+    padding: 10px 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    width: fit-content;
+    z-index: 1000; /* Ensures it stays on top */
+}
+
+.social img {
+    height: 40px;
+    width: 40px;
+    padding: 5px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.social img:hover {
+    transform: scale(1.2);
+}
+
+.icon-container {
+    position: relative;
+    display: inline-block;
+    text-align: center;
+}
+
+.tooltip {
+    position: absolute;
+    bottom: 120%; /* Moves text above the icon */
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: black;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 12px;
+    white-space: nowrap;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+    pointer-events: none;
+}
+
+.icon-container:hover .tooltip {
+    opacity: 1;
+}
+    </style>
+</head>
+<body>
+    <!------------Main Section-------------->
+<main class="body">
+    <!------------Projects Section-------------->
+    <section class="project">
+        <h1>Projects</h1>
+        <div class="card-container">
+            <div class="card">
+                <img src="Images/bank management.jpg" alt="Bank Management System">
+                <div class="card-content">
+                    <h3>Bank Management System</h3>
+                    <p>Developed a comprehensive banking application with credit/debit transactions, transaction history
+                        tracking, and secure authentication.</p>
+                    <div class="skill-set">
+                        <div class="skill">JSP</div>
+                        <div class="skill">CSS</div>
+                        <div class="skill">JavaScript</div>
+                        <div class="skill">Java</div>
+                        <div class="skill">SQL</div>
+                    </div>
+                </div>
+                <div class="website"><img src="Images/website.svg" alt="Website"> &nbsp;Website</div>
+            </div>
+            <div class="card">
+                <img src="Images/hospital-management-system-fb.png" alt="Hospital Management System">
+                <div class="card-content">
+                    <h3>Hospital Management System</h3>
+                    <p>Designed a hospital management system with doctor appointments, patient record management, and
+                        dynamic billing.</p>
+                    <div class="skill-set">
+                        <div class="skill">JSP</div>
+                        <div class="skill">CSS</div>
+                        <div class="skill">JavaScript</div>
+                        <div class="skill">Java</div>
+                        <div class="skill">SQL</div>
+                    </div>
+                </div>
+                <div class="website"><img src="Images/website.svg" alt="Website"> &nbsp;Website</div>
+            </div>
+        </div>
+    </section>
+    </main>
+
+    <!------------Social Section-------------->
+
+<div class="social">
+    <div class="icon-container"><a href="index.html"><div class="tooltip">Home</div><span><img src="Images/home.svg" alt="Home"></span></a></div>
+    <div class="icon-container"><a href="about.html"><div class="tooltip">About</div><span><img src="Images/avatar.svg" alt="Home"></span></a></div>
+    <div class="icon-container"><a href="about.html"><div class="tooltip">Projects</div><span><img src="Images/projects.svg" alt="Home"></span></a></div>
+    <div class="icon-container"><a href="#"><span><img src="Images/moon.svg" alt="Dark Mode"></span></a></div>
+
+</div>
+</body>
+</html>

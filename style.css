@@ -48,7 +48,6 @@
     gap: 2rem;
 }
 
-
 .linkdiv div {
     gap: 0.5rem;
     padding: 0.5%;
@@ -65,7 +64,7 @@
 }
 
 .linkdiv img { width: 3rem; }
-.linkdiv span { align-content: center; font-weight: bold; }
+.linkdiv span { align-content: center; font-weight: bold; padding: 0.5rem;}
 
 
 /*-----------Moto Section--------------*/
@@ -96,25 +95,26 @@
 }
 
 .skillsdiv div {
+    padding: 0.5rem;
     gap: 0.5rem;
-    padding: 0.5%;
     text-align: center;
-    border: 0.2rem solid black;
+    border: 0.1rem solid rgb(104, 108, 109);
     border-radius: 20px;
     display: flex;
-    background: linear-gradient(to right, #f2e8e4, #a4a4a4);
+    background: rgb(213, 218, 219);
     transition: transform 0.5s ease, background 0.5s ease;
     cursor: pointer;
+   
 }
 
 .skillsdiv div:hover {
-    background: linear-gradient(to right, #888a6b, #383838);
+    background: rgb(96, 98, 99);
     transform: scale(1.1);
     color: white;
 }
 
 .skillsdiv img { width: 3rem; }
-.skillsdiv span { align-content: center; font-weight: bold; }
+.skillsdiv span { align-content: center;  font-size: 1.4rem;  }
 
 /*-----------Social--------------*/
 
@@ -171,52 +171,6 @@
 .icon-container:hover .tooltip {
     opacity: 1;
 }
-
-/*-----------Project--------------*/
-.card-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 20px;
-}
-
-.card {
-    background: #fff;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    overflow: hidden;
-    width: 400px;
-    transition: transform 0.9s ease;
-}
-
-.card img { width: 100%; height: 40%; display: block; }
-.card img:hover { transform: scale(1.05); cursor: pointer; }
-
-.card-content { padding: 15px; text-align: center; }
-.card-content h3 { text-align: left; margin-bottom: 10px; font-size: 1.6rem; }
-.card-content p { font-size: 20px; color: #666; text-align: left; }
-
-.skill {
-    font-size: 1.3rem;
-    padding: 0.5rem;
-    background: #ebebeb;
-    border-radius: 10px;
-    width: fit-content;
-}
-
-.card-content div { display: flex; justify-content: space-evenly; }
-
-.website {
-    display: flex;
-    margin: 0 22px 10px;
-    font-size: 1.3rem;
-    padding: 0.5rem;
-    background: #ebebeb;
-    border-radius: 10px;
-    width: fit-content;
-    align-items: center;
-}
-.website img { width: 1.7rem; height: 1.7rem; }
 
 /*-----------Contact--------------*/
 .contact-container {
