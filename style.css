@@ -40,6 +40,33 @@
 #profilediv img:hover { transform: scale(1.1); }
 
 
+        /*-----------About--------------*/
+        .about h1, .skillssection h1, .educationmain h1, .project h1, .contact h1 {
+            font-size: 1.8rem;
+            margin-top: 3rem;
+            }
+            .about p { text-align: justify; font-size: 150%; color: #656464; }
+    
+            /*-----------Education--------------*/
+    .educationdetails {
+        display: flex;
+        width: 100%;
+        font-size: 1.5rem;
+        background: #edefeefb;
+        border-radius: 20px;
+        color: #656464;
+        padding: 0.5rem;
+        transition: box-shadow 0.9s ease;
+        align-items: center; /* Ensures vertical alignment */
+        justify-content: space-between; /* Pushes content to opposite sides */
+    }
+    .educationdetails b {
+        color: black; /* Ensures bold text is black */
+    }
+    
+    .educationdetails:hover { box-shadow: 5px 10px 20px; cursor: pointer; }
+    
+
 /*-----------Link Section--------------*/
 
 .linkdiv {
@@ -120,7 +147,7 @@
 
 .social {
     position: fixed;  /* Keeps it in the same place on the screen */
-    margin-top: 5.5%;    
+    bottom: 2rem;    
     left: 50%;
     transform: translateX(-50%);
     background-color: rgba(255, 255, 255, 0.9); /* Slight transparency */
@@ -170,6 +197,53 @@
     opacity: 1;
 }
 
+
+        /*-----------Project--------------*/
+        .card-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+        }
+        
+        .card {
+            background: #fff;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            width: 400px;
+            transition: transform 0.9s ease;
+        }
+        
+        .card img { width: 100%; height: 40%; display: block; }
+        .card img:hover { transform: scale(1.05); cursor: pointer; }
+        
+        .card-content { padding: 15px; text-align: center; }
+        .card-content h3 { text-align: left; margin-bottom: 10px; font-size: 1.6rem; }
+        .card-content p { font-size: 20px; color: #666; text-align: left; }
+        
+        .skill {
+            font-size: 1.3rem;
+            padding: 0.5rem;
+            background: #ebebeb;
+            border-radius: 10px;
+            width: fit-content;
+        }
+        
+        .card-content div { display: flex; justify-content: space-evenly; }
+        
+        .website {
+            display: flex;
+            margin: 0 22px 10px;
+            font-size: 1.3rem;
+            padding: 0.5rem;
+            background: #ebebeb;
+            border-radius: 10px;
+            width: fit-content;
+            align-items: center;
+        }
+        .website img { width: 1.7rem; height: 1.7rem; }
+
 /*-----------Contact--------------*/
 .contact-container {
     margin-top: 3rem;
@@ -208,6 +282,19 @@ button {
 }
 
 button:hover { background: #0056b3; }
+
+/*-----------Footer--------------*/
+
+.fixed-footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    z-index: 1000;
+}
 
 /*Responsive Design*/
 
